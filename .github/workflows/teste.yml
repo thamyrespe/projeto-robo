@@ -8,9 +8,8 @@ jobs:
   call-reusable-workflow:
     # Define um job chamado "call-reusable-workflow".
 
-    uses: thamyrespe/.github/workflows/ci.yml@main
-    # Especifica a localização do workflow reutilizável que deve ser chamado.
-    # Certifique-se de que o caminho e branch (main) estão corretos.
+    uses: ./.github/workflows/ci.yml
+    # Especifica a localização do workflow reutilizável local.
 
     with:
       message: "Teste Realizado com sucesso"
